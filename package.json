@@ -1,5 +1,5 @@
 {
-  "name": "custom-node-react-with-email-templates-ecommerce-app",
+  "name": "react-mart",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,10 +17,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "5.3.1",
+    "mini-css-extract-plugin": "1.6.0",
+    "node-sass": "^5.0.0",
+    "postcss-loader": "5.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-redux": "7.2.4",
-    "redux": "4.1.0"
+    "react-redux": "^7.2.4",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.0",
+    "sass": "^1.32.12",
+    "sass-loader": "^11.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.13.14",
@@ -36,7 +45,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "html-webpack-plugin": "^5.3.1",
     "style-loader": "^2.0.0",
-    "webpack": "^5.28.0",
+    "webpack": "^5.36.2",
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2"
   }
