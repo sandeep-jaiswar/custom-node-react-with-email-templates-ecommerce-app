@@ -34,6 +34,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html',
     }),
+    "@loadable/babel-plugin"
   ],
   resolve: {
     extensions: ['*', '.js', '.jsx'],
