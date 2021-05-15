@@ -1,0 +1,89 @@
+@import "./variables";
+
+.btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  vertical-align: middle;
+  user-select: none;
+  border: none;
+  outline: none;
+  padding: 0 1.75rem;
+  height: 2.125rem;
+  font-size: 0.875rem;
+  line-height: inherit;
+  border-radius: 3.5rem;
+  cursor: pointer;
+
+  &-sm{
+    font-size: 0.75rem;
+    height: 1.625rem;
+  }
+  &-lg{
+      height: 2.5rem;
+  }
+  &-xs{
+      font-size: 0.75rem;
+      height: 1.25rem;
+  }
+  &-xl{
+      height: 3.125rem;
+      font-size: 1rem;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      font-weight: 600;
+  }
+  &-xxl{
+      height: 3.75rem;
+      font-size: 1rem;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+      font-weight: 600;
+  }
+  &-danger{
+    border: 3px solid $danger;
+    background-color: $white;
+    &:hover{
+      background-color: $danger;
+      color: $white;
+    }
+  }
+  
+  &-info{
+    border: 3px solid $info;
+    background-color: $white;
+    &:hover{
+      background-color: $info;
+      color: $white;
+    }
+  }
+
+  &-success{
+    border: 3px solid $success;
+    background-color: $white;
+    &:hover{
+      background-color: $success;
+      color: $white;
+    }
+  }
+  
+  &-primary{
+    border: 3px solid $primary;
+    background-color: $white;
+    &:hover{
+      background-color: $primary;
+      color: $white;
+    }
+  }
+  
+  &-warning{
+    border: 3px solid $warning;
+    background-color: $white;
+    &:hover{
+      background-color: $warning;
+      color: $white;
+    }
+  }
+}
+
