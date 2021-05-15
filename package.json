@@ -29,6 +29,8 @@
     "react-router-config": "^5.1.1",
     "react-router-dom": "^5.2.0",
     "redux": "^4.1.0",
+    "redux-logger": "3.0.6",
+    "redux-thunk": "2.3.0",
     "sass": "^1.32.12",
     "sass-loader": "^11.0.1"
   },
