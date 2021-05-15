@@ -1,11 +1,11 @@
 import React from 'react';
 import './styles/index.scss';
-import Button from './common/Button';
+import Loader from './common/Loader';
 
 function App() {
   return (
     <div>
-      <Button children='app' type='danger' />
+      <Loader />
     </div>
   );
 }

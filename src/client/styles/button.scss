@@ -42,7 +42,7 @@
       font-weight: 600;
   }
   &-danger{
-    border: 3px solid $danger;
+    border: 2px solid $danger;
     background-color: $white;
     &:hover{
       background-color: $danger;
@@ -51,7 +51,7 @@
   }
   
   &-info{
-    border: 3px solid $info;
+    border: 2px solid $info;
     background-color: $white;
     &:hover{
       background-color: $info;
@@ -60,7 +60,7 @@
   }
 
   &-success{
-    border: 3px solid $success;
+    border: 2px solid $success;
     background-color: $white;
     &:hover{
       background-color: $success;
@@ -69,7 +69,7 @@
   }
   
   &-primary{
-    border: 3px solid $primary;
+    border: 2px solid $primary;
     background-color: $white;
     &:hover{
       background-color: $primary;
@@ -78,7 +78,7 @@
   }
   
   &-warning{
-    border: 3px solid $warning;
+    border: 2px solid $warning;
     background-color: $white;
     &:hover{
       background-color: $warning;
