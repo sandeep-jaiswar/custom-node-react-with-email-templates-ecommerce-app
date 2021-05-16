@@ -6,10 +6,12 @@ import "./client/styles/index.scss";
 import store from './store/createStore';
 import {renderRoutes} from 'react-router-config';
 import routes from './client/routes/routes';
+import Header from "./client/common/Header";
 
 ReactDOM.render(
   <Provider store={store()}>
     <BrowserRouter>
+    <Header/>
     {renderRoutes(routes)}
     </BrowserRouter>
   </Provider>,
