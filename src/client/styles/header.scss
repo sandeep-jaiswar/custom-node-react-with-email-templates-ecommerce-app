@@ -1,0 +1,11 @@
+@import "./variables";
+
+.header{
+  border: 1px solid seagreen;
+  position: relative;
+  height: 80px;
+  .wrapper{
+    display: flex;
+    position: absolute;
+  }
+}
