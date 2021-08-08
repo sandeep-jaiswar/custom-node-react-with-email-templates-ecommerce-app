@@ -28,10 +28,6 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"]
       },
       {
-        test: /\.(eot|woff|woff2|svg|ttf)$/,
-        use: ["file-loader"]
-      },
-      {
         test: /\.(ttf|eot|woff|woff2|svg|gif|otf)/,
         use: {
           loader: "file-loader",
