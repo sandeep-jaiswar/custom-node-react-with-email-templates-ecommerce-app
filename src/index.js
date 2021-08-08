@@ -9,12 +9,14 @@ import routes from "./client/routes/routes";
 import Header from "./client/common/Header";
 import "./font/HelveticaNeue/styles.css";
 import "./font/Gilroy/styles.css";
+import Footer from "./client/common/Footer";
 
 ReactDOM.hydrate(
   <Provider store={store()}>
     <BrowserRouter>
       <Header />
       {renderRoutes(routes)}
+      <Footer />
     </BrowserRouter>
   </Provider>,
   document.getElementById("app")
