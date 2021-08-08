@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url(./Gilroy.eot);
+  src: url(./Gilroy.eot?#iefix) format('embedded-opentype'),
+       url(./Gilroy.otf) format('otf'),
+       url(./Gilroy.svg#Gilroy) format('svg'),
+       url(./Gilroy.ttf) format('truetype'),
+       url(./Gilroy.woff) format('woff'),
+       url(./Gilroy.woff2) format('woff2');
+}

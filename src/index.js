@@ -3,16 +3,18 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import "./client/styles/index.scss";
-import store from './store/createStore';
-import {renderRoutes} from 'react-router-config';
-import routes from './client/routes/routes';
+import store from "./store/createStore";
+import { renderRoutes } from "react-router-config";
+import routes from "./client/routes/routes";
 import Header from "./client/common/Header";
+import "./font/HelveticaNeue/styles.css";
+import "./font/Gilroy/styles.css";
 
 ReactDOM.hydrate(
   <Provider store={store()}>
     <BrowserRouter>
-    <Header/>
-    {renderRoutes(routes)}
+      <Header />
+      {renderRoutes(routes)}
     </BrowserRouter>
   </Provider>,
   document.getElementById("app")

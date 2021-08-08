@@ -1,7 +1,7 @@
 import { HIDE_TOAST, SHOW_TOAST } from "../../constants/toastMessage";
 
 const initialState = {
-  toasts: []
+  toasts: null
 };
 
 export const toastReducers = (state = initialState, action) => {
@@ -11,12 +11,12 @@ export const toastReducers = (state = initialState, action) => {
       return {
         ...state,
         toasts: payload,
-        timestamp: Date.now(),
+        timestamp: Date.now()
       };
     case HIDE_TOAST:
       return {
         ...state,
-        toasts: []
+        toasts: null
       };
     default:
       return { ...state };
