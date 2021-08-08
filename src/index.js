@@ -8,7 +8,7 @@ import {renderRoutes} from 'react-router-config';
 import routes from './client/routes/routes';
 import Header from "./client/common/Header";
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <Provider store={store()}>
     <BrowserRouter>
     <Header/>
