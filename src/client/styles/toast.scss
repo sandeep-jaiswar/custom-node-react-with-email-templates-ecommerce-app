@@ -1,0 +1,28 @@
+@import "./variables";
+@import "./keyframes.scss";
+
+.toast-wrapper{
+  position: absolute;
+  top: 87vh;
+  width: 80vw;
+  margin: 0 10vw;
+  background-color: #000000;
+  color: #f5eded;
+  padding: 0.5rem 0.25rem;
+  border-radius: 0.5rem;
+  .cross-icon{
+
+  }
+  .message{
+    text-align: center;
+  }
+  .progress{
+    position: absolute;
+    top: 5%;
+    color: black;
+    background: black;
+    border: 1px solid green;
+    width: 97%;
+    transition: width 2s;
+  }
+}

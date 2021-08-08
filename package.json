@@ -19,7 +19,6 @@
     "@loadable/component": "5.15.0",
     "@loadable/webpack-plugin": "5.15.0",
     "file-loader": "6.2.0",
-    "html-webpack-plugin": "5.3.1",
     "mini-css-extract-plugin": "1.6.0",
     "node-sass": "^5.0.0",
     "postcss-loader": "5.2.0",
@@ -35,7 +34,8 @@
     "redux-thunk": "2.3.0",
     "sass": "^1.32.12",
     "sass-loader": "^11.0.1",
-    "svg-inline-loader": "0.8.2"
+    "svg-inline-loader": "0.8.2",
+    "url-loader": "4.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.13.14",
