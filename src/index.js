@@ -1,23 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { BrowserRouter } from "react-router-dom";
-import "./client/styles/index.scss";
-import store from "./store/createStore";
 import { renderRoutes } from "react-router-config";
+import { BrowserRouter } from "react-router-dom";
 import routes from "./client/routes/routes";
-import Header from "./client/common/Header";
-import "./font/HelveticaNeue/styles.css";
+import "./client/styles/index.scss";
 import "./font/Gilroy/styles.css";
-import Footer from "./client/common/Footer";
+import "./font/HelveticaNeue/styles.css";
+import store from "./store/createStore";
 
 ReactDOM.hydrate(
   <Provider store={store()}>
-    <BrowserRouter>
-      <Header />
-      {renderRoutes(routes)}
-      <Footer />
-    </BrowserRouter>
+    <BrowserRouter>{renderRoutes(routes)}</BrowserRouter>
   </Provider>,
   document.getElementById("app")
 );

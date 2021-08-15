@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import { toastReducers } from "./toast-reducers/toastReducers";
+import { configReducers } from "./config-reducers/configReducers";
 
 export default combineReducers({
-  config: toastReducers
+  config: configReducers
 });
