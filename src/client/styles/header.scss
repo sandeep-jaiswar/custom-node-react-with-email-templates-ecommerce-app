@@ -5,9 +5,14 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 3.375rem;
+  height: 10%;
   box-shadow: 0 6px 7px 0 rgb(51 51 51 / 8%);
   .wrapper{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 1rem;
+    width: 100%;
   }
 }

@@ -1,0 +1,13 @@
+@import "./variables";
+@import "./keyframes.scss";
+
+.icon-wrapper{
+  position: relative;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  transition: all 0.1s ease;
+}
+
+.icon-clicked{
+  background: $iconBg;
+}

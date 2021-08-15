@@ -1,6 +1,11 @@
 @import "variables";
 html{
-    height: 100%;
+    height: 100vh;
+}
+
+:root{
+    --firstColor : black;
+    --secondColor : hsl(309, 77%, 40%);
 }
 
 * , *::after,*::before{
@@ -15,4 +20,5 @@ body{
     line-height: 1.3;
     font-size: $font-md;
     font-family: Gilroy;
+    height: 100vh;
 }
