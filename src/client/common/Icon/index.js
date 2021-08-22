@@ -12,7 +12,9 @@ const Icon = (props) => {
   }, []);
   return (
     <div ref={iconRef} className={`icon-wrapper`}>
-      <div className={`${props.className}`}>{props.children}</div>
+      <div className={`${props.className}`} onClick={props.onClick}>
+        {props.children}
+      </div>
     </div>
   );
 };

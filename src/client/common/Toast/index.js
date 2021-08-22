@@ -15,7 +15,10 @@ const Toast = (props) => {
   };
   useEffect(() => {
     setTimeout(() => {
-      document.getElementById("progress-bar").style.width = 0;
+      const elem = document.getElementById("progress-bar");
+      if (elem) {
+        elem.style.width = 0;
+      }
       setTimeout(() => {
         hideToast();
       }, 2000);

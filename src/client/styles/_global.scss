@@ -1,6 +1,7 @@
 @import "variables";
 html{
     height: 100vh;
+    width: 100vw;
 }
 
 :root{
@@ -21,4 +22,5 @@ body{
     font-size: $font-md;
     font-family: Gilroy;
     height: 100vh;
+    width: 100vw;
 }
