@@ -8,10 +8,15 @@ import "./client/styles/index.scss";
 import "./font/Gilroy/styles.css";
 import "./font/HelveticaNeue/styles.css";
 import store from "./store/createStore";
+import CustomRouter from "./client/routes/CustomRouter";
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 
 ReactDOM.hydrate(
   <Provider store={store()}>
-    <BrowserRouter>{renderRoutes(routes)}</BrowserRouter>
+    <BrowserRouter>
+      <CustomRouter>{renderRoutes(routes)}</CustomRouter>
+    </BrowserRouter>
   </Provider>,
   document.getElementById("app")
 );
