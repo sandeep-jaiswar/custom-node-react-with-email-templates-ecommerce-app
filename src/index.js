@@ -11,6 +11,15 @@ import store from "./store/createStore";
 import CustomRouter from "./client/routes/CustomRouter";
 import "core-js/stable";
 import "regenerator-runtime/runtime";
+import "./client/common/Image/LazyLoadImage";
+
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+var element = document.getElementById('app');
+if (isMobile) {
+  window.isMobile = true;
+} else {
+  window.isMobile = false;
+}
 
 ReactDOM.hydrate(
   <Provider store={store()}>

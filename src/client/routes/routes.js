@@ -1,12 +1,12 @@
-import loadable from '@loadable/component';
-const LandingPage = loadable(() => import('../pages/landing-page/LandingPage'));
+import WebRoutes from "./WebRoutes";
+import MobileRoutes from "./MobileRoutes";
 
-const routes = [
-  {
-    component : LandingPage,
-    path : '/',
-    exact : true
-  }
-];
+var routes = [];
+
+if(window.isMobile){
+  routes = MobileRoutes;
+}else{
+  routes = WebRoutes;
+}
 
 export default routes;

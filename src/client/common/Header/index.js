@@ -23,6 +23,13 @@ const Header = forwardRef((props, ref) => {
     );
   };
   useEffect(() => {}, []);
+  if(!window.isMobile){
+    return (
+      <div ref={ref} className="header">
+        
+      </div>
+    )
+  }
   return (
     <div ref={ref} className="header">
       <div className="wrapper">

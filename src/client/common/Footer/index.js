@@ -23,6 +23,9 @@ const Footer = forwardRef((props, ref) => {
       })
     );
   };
+  if(!window.isMobile){
+    return null;
+  }
   return (
     <div className="footer">
       <div className="wrapper">

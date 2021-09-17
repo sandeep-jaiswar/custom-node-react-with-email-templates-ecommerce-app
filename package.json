@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "babel": {
-    "presets": ["@babel/preset-env", "@babel/preset-react"]
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
   },
   "scripts": {
     "start": "webpack serve --open --hot --port 3000",
