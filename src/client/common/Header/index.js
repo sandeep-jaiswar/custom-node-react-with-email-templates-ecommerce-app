@@ -27,15 +27,6 @@ const Header = forwardRef((props, ref) => {
       })
     );
   };
-  window.onscroll = () => {
-    if (window.scrollY > 0) {
-      if (!ref.current.classList.contains('fixed-header')) {
-        ref.current.classList.add("fixed-header");
-      };
-    } else {
-      ref.current.classList.remove("fixed-header");
-    }
-  }
 
   if (!window.isMobile) {
     return (

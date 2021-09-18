@@ -33,14 +33,9 @@
   font-size: 12px;
   font-weight: 600;    
   width: 100%;
-
-  .header-content{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 1rem;
-  }
   .logo{
-    background : linear-gradient(to right, rgb(86, 204, 242), rgb(47, 128, 237));
+    background: linear-gradient(180deg, rgba(255,134,0,1) 0%, rgb(244,165,0) 88%);
+    // background : linear-gradient(to right, rgb(86, 204, 242), rgb(47, 128, 237));
     padding: 1rem 2rem;
     text-transform: uppercase;
     word-spacing: 4px;
@@ -49,12 +44,14 @@
     font-weight: bolder;
     border: 0;
     font-size: 1rem;
-    margin: 0 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
   }
   .deliver-location{
     display: flex;
     align-items: center;
     margin: 0 1rem;
+    cursor: pointer;
     .loc-dtls{
       font-size: 12px;
       font-weight: 600;
@@ -76,10 +73,12 @@
     display: flex;
     align-items: center;
     margin: 0 1rem;
+    cursor: pointer;
   }
   .orders-sec{
     display: flex;
     align-items: center;
     margin: 0 1rem;
+    cursor: pointer;
   }
 }

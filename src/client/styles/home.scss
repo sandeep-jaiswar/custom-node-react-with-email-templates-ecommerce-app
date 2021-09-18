@@ -1,15 +1,30 @@
 .home-page{
     position: absolute;
     width: 100%;
+    background: linear-gradient(180deg, rgba(244,165,0,1) 0%, rgba(255,255,255,1) 24%);
+//     background: rgb(246,223,55);
+// background: linear-gradient(180deg, rgba(246,223,55,1) 0%, rgba(244,71,0,1) 7%, rgba(255,255,255,1) 14%);
     .home-grid-sys{
         margin: 1rem;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 20px;
+        .four-grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+            margin: 0 1rem 1rem 1rem;
+            font-size: 12px;
+            font-weight: 600;
+        }
         .slider-grid{
+            position: relative;
             grid-column: 1 / 5;
             width: 100%;
-            height: 400px;
+            height: 420px;
+            .slider-img{
+                height: inherit;
+            }
         }
         .todays-grid{
             grid-column: 1 / 5;
@@ -34,3 +49,59 @@
         }
     }
 }
+
+.slider-carousel .left{
+    left: 0;
+}
+.slider-carousel .right{
+    right: 0;
+}
+
+.slider-carousel{
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: hidden;
+    margin: 1rem;
+    column-gap: 1rem;
+    font-size: 14px;
+    font-weight: 600;
+    .slider-carousel-img{
+        width: 100%;
+        height: 100%;
+    }
+    .svg-circle{
+        background-color: transparent;
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        .svg-wrapper{
+            background: #fff;
+            width: 43px;
+            height: 43px;
+            margin: 0 Auto;
+            padding: 5px;
+            border-radius: 50%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
+        }
+      
+        .circle {
+            border-radius: 50%;
+            stroke: #1390d3;
+            fill: none;
+            stroke-width: 2.5px;
+            stroke-dashoffset: -2.669em;
+            stroke-dasharray: 2.669em;
+            animation: loader 1.4s linear infinite;
+            transform: rotate(-90deg);
+            transform-origin: 50%;
+            position: relative;
+          }
+      }
+}
+

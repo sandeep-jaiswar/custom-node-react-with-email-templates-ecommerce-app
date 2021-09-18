@@ -3,7 +3,7 @@
 .lib-card{
     box-shadow: 0 0 9px 0 rgb(0 0 0 / 20%);
     min-width: 18.75rem;
-    min-height: 18.75rem;
+    min-height: max-content;
     cursor: pointer;
     border-radius: 10px;
     background: #fff;
@@ -17,5 +17,11 @@
         text-overflow: ellipsis;
         margin: 0.75rem;
         font-weight: 600;
+    }
+    .footer-text{
+        font-size: 14px;
+        margin : 0.75rem;
+        font-weight: 600;
+        color: rgba(55,134,246,1);
     }
 }
