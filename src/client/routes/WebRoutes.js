@@ -1,9 +1,9 @@
 import loadable from '@loadable/component';
-const LandingPage = loadable(() => import('../pages/web/landing-page/LandingPage'));
+const Home = loadable(() => import('../pages/web/home'));
 
 const routes = [
   {
-    component : LandingPage,
+    component : Home,
     path : '/',
     exact : true
   }

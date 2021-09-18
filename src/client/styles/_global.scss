@@ -1,7 +1,7 @@
 @import "variables";
 html{
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 :root{
@@ -21,6 +21,33 @@ body{
     line-height: 1.3;
     font-size: $font-md;
     font-family: Gilroy;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
+
+#app{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: unset;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, rgb(86, 204, 242), rgb(47, 128, 237));
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(47, 128, 237);
+  }
