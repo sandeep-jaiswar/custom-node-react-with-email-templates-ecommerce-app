@@ -19,7 +19,7 @@ export default function HocPage(props) {
   return (
     <>
       <Header ref={headerRef} />
-      <div className="page-wrapper">
+      <div className="page-wrapper" style={{ top: `${headerHeight}px` }}>
         {props.children}
       </div>
       <Footer ref={footerRef} />

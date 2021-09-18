@@ -1,7 +1,9 @@
 @import "./variables";
 
 .carousel-wrapper{
+  height: 100%;
+  width: 100%;
   .img-wrapper{
-    display: flex;
+    object-fit: contain;
   }
 }

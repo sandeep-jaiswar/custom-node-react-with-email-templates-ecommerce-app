@@ -1,13 +1,11 @@
 import React from 'react'
 import Card from '../../../common/Card';
+import Carousel from '../../../common/Carousel';
 
 function HomeGridSystem() {
     return (
         <div className='home-grid-sys'>
             <Card customClass="slider-grid" title="">
-                <div>
-                    <div></div>
-                </div>
             </Card>
             <Card customClass="" title="Food & beverages">
                 <div>
