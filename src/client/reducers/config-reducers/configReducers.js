@@ -1,3 +1,4 @@
+import { HIDE_MODAL, SHOW_MODAL } from "../../constants/modal";
 import { HIDE_POPOVER, SHOW_POPOVER } from "../../constants/popover";
 import { HIDE_SLIDER, SHOW_SLIDER } from "../../constants/slider";
 import { HIDE_TOAST, SHOW_TOAST } from "../../constants/toastMessage";
@@ -5,7 +6,8 @@ import { HIDE_TOAST, SHOW_TOAST } from "../../constants/toastMessage";
 const initialState = {
   toasts: null,
   slider: null,
-  popover: null
+  popover: null,
+  modal: null
 };
 
 export const configReducers = (state = initialState, action) => {
@@ -36,6 +38,19 @@ export const configReducers = (state = initialState, action) => {
       return {
         ...state,
         slider: null
+      };
+    case SHOW_MODAL:
+      return {
+        ...state,
+        modal: {
+          current: payload,
+          timestamp: Date.now()
+        }
+      };
+    case HIDE_MODAL:
+      return {
+        ...state,
+        modal: null
       };
     case SHOW_POPOVER:
       return {

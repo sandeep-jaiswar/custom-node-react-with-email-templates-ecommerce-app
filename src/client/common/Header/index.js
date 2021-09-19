@@ -7,6 +7,7 @@ import Icon from "../Icon";
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { BiSearchAlt2 } from 'react-icons/bi';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { showModal } from "../../actions/modal-actions/modalActions";
 
 
 const Header = forwardRef((props, ref) => {
@@ -32,7 +33,7 @@ const Header = forwardRef((props, ref) => {
     return (
       <div ref={ref} className="header web">
         <div className='logo'>MART</div>
-        <div className='deliver-location'>
+        <div className='deliver-location' onClick={()=>dispatch(showModal('ChooseLocationModal'))}>
           <HiOutlineLocationMarker />
           {!!isLocationCap ? (<div className='loc-dtls'>
             <div>Hello,</div>
