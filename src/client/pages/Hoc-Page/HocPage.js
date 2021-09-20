@@ -16,6 +16,7 @@ export default function HocPage(props) {
   useEffect(() => {
     setFooterHeight(footerRef?.current?.clientHeight);
     setHeaderHeight(headerRef?.current?.clientHeight);
+    window.scrollTo(0, 1);
   }, []);
   return (
     <>

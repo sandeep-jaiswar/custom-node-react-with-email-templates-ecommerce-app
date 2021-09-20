@@ -1,0 +1,33 @@
+.ChooseLocationModal{
+    font-size: 14px;
+    .suggest-container1{
+        margin-bottom: 1rem;
+    }
+    .suggest-container2{
+        margin-bottom: 1rem;
+    }
+    .choose-location-form{
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        input{
+            padding: 8px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    }
+    .sign-in-btn{
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        *{
+            margin: 0 4px;
+        }
+        .hr-line{
+            border-top: 1px solid;
+            width: 3rem;
+        }
+    }
+}

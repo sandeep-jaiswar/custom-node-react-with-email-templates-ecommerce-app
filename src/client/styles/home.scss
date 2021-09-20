@@ -56,59 +56,10 @@
 .slider-carousel .right{
     right: 0;
 }
-
-.slider-carousel{
-    display: flex;
-    position: relative;
-    flex-wrap: nowrap;
-    align-items: center;
-    overflow: hidden;
-    margin: 0 1rem 1rem 1rem;
-    column-gap: 1rem;
-    font-size: 14px;
-    font-weight: 600;
-    .slider-carousel-content{
-        position: unset;
-    }
-    .slider-carousel-img{
-        width: 15rem;
-        height: 15rem;
-        img{
-            height: inherit;
-            width: inherit;
-        }
-    }
-    .slider-carousel-footerText{
-        margin-top: 1rem;
-    }
-    .svg-circle{
-        background-color: transparent;
-        position: absolute;
-        top: 43%;
-        z-index: 10;
-        width: 100%;
-        .svg-wrapper{
-            background: #fff;
-            width: 43px;
-            height: 43px;
-            margin: 0 Auto;
-            padding: 5px;
-            border-radius: 50%;
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.1);
-            .leftArrow{
-                margin-right: 4px;
-            }
-            .rightArrow{
-                margin-left: 4px;
-            }
-            svg{
-                color: #1390d3;
-            }
-        }
-      }
+.slideLeft{
+    transform: translateX(calc(-17rem));
+}
+.slideRight{
+    transform: translateX(calc(17rem));
 }
 

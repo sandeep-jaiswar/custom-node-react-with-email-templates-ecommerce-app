@@ -1,10 +1,10 @@
-import React from 'react'
-import Button from '../../../common/Button';
+import React, { useRef } from 'react'
 import Card from '../../../common/Card';
 import Carousel from '../../../common/Carousel';
 import Image from '../../../common/Image';
 
 function HomeGridSystem() {
+    const carouselref = useRef(null);
     const createGrids = arr => {
         return (
             <div className='four-grid'>
@@ -49,42 +49,6 @@ function HomeGridSystem() {
         return array;
     }
 
-    const getSLiderArrowBtn = key => {
-        const left = key === 'left' ? 1 : 96;
-        const getSvg = key => {
-            if (key === 'left') {
-                return (<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-left leftArrow" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
-                </svg>)
-            }
-            return (
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-right rightArrow" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                </svg>
-            )
-        }
-        return (
-            <div className='svg-circle' style={{ left: `${left}%` }}>
-                <div className="svg-wrapper">
-                    {getSvg(key)}
-                </div>
-            </div>
-        )
-    }
-    const getSliderCarousel = arr => {
-        return (
-            <div className='slider-carousel'>
-                {getSLiderArrowBtn('left')}
-                {arr.map((cur, i) => (
-                    <div className='slider-carousel-content' key={i}>
-                        <Image url={cur.url} customImgClass={`slider-carousel-img`} />
-                        {cur.name && <div className='slider-carousel-footerText'>{cur.name}</div>}
-                    </div>
-                ))}
-                {getSLiderArrowBtn('right')}
-            </div>
-        )
-    }
     return (
         <div className='home-grid-sys'>
             <div className="slider-grid">
@@ -115,10 +79,10 @@ function HomeGridSystem() {
                 {createGrids(shuffleArr(imgArr))}
             </Card>
             <Card customClass="todays-grid" title='Today’s Deals'>
-                {getSliderCarousel(shuffleArr(sliderImgArr))}
+                <Carousel ref={carouselref} arr={shuffleArr(sliderImgArr)}/>
             </Card>
             <Card customClass="like-new-prod-grid" title='Up to 70% off | Like-new products' >
-                {getSliderCarousel(shuffleArr(sliderImgArr))}
+                <Carousel ref={carouselref} arr={shuffleArr(sliderImgArr)}/>
             </Card>
             <Card customClass="" title="Up to 50% off | Garden & outdoor" footerText="see more">
                 {createGrids(shuffleArr(imgArr))}
@@ -133,10 +97,10 @@ function HomeGridSystem() {
                 {createGrids(shuffleArr(imgArr))}
             </Card>
             <Card customClass="bestselling-sarees-grid" title='Up to 80% off | Bestselling sarees'>
-                {getSliderCarousel(shuffleArr(sliderImgArr))}
+                <Carousel ref={carouselref} arr={shuffleArr(sliderImgArr)}/>
             </Card>
             <Card customClass="bestselling-drinkware-grid" title='Up to 80% off | Bestselling glassware and drinkware' >
-                {getSliderCarousel(shuffleArr(sliderImgArr))}
+                <Carousel ref={carouselref} arr={shuffleArr(sliderImgArr)}/>
             </Card>
             <Card customClass="" title="Value Packs under ₹599 | Amazon Brands & more" footerText="see more">
                 {createGrids(shuffleArr(imgArr))}
@@ -151,10 +115,10 @@ function HomeGridSystem() {
                 {createGrids(shuffleArr(imgArr))}
             </Card>
             <Card customClass="bestselling-smartphones-grid" title='Explore the bestselling smartphones'>
-                {getSliderCarousel(shuffleArr(sliderImgArr))}
+                <Carousel ref={carouselref} arr={shuffleArr(sliderImgArr)}/>
             </Card>
             <Card customClass="bestselling-furniture-grid" title='Up to 80% off | Bestselling home furniture'>
-                {getSliderCarousel(shuffleArr(sliderImgArr))}
+                <Carousel ref={carouselref} arr={shuffleArr(sliderImgArr)}/>
             </Card>
             <Card customClass="" title="Cookware & dining" footerText="see more">
                 {createGrids(shuffleArr(imgArr))}
@@ -169,7 +133,7 @@ function HomeGridSystem() {
                 {createGrids(shuffleArr(imgArr))}
             </Card>
             <Card customClass="bestselling-Grocery-grid" title='Best Sellers in Grocery & Gourmet Foods'>
-                {getSliderCarousel(shuffleArr(sliderImgArr))}
+                <Carousel ref={carouselref} arr={shuffleArr(sliderImgArr)}/>
             </Card>
         </div>
     )

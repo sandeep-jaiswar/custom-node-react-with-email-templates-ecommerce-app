@@ -8,6 +8,7 @@ import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { BiSearchAlt2 } from 'react-icons/bi';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { showModal } from "../../actions/modal-actions/modalActions";
+import { useHistory } from "react-router-dom";
 
 
 const Header = forwardRef((props, ref) => {
@@ -15,6 +16,7 @@ const Header = forwardRef((props, ref) => {
     "--firstColor"
   );
   const dispatch = useDispatch();
+  const history = useHistory();
   const cartIconRef = useRef(null);
   const menuClickHandler = () => {
     dispatch(showSlider("MenuSlider"));
@@ -32,7 +34,7 @@ const Header = forwardRef((props, ref) => {
   if (!window.isMobile) {
     return (
       <div ref={ref} className="header web">
-        <div className='logo'>MART</div>
+        <div className='logo' onClick={()=>history.push('')}>MART</div>
         <div className='deliver-location' onClick={()=>dispatch(showModal('ChooseLocationModal'))}>
           <HiOutlineLocationMarker />
           {!!isLocationCap ? (<div className='loc-dtls'>
@@ -48,13 +50,13 @@ const Header = forwardRef((props, ref) => {
           <BiSearchAlt2 size="1.5rem" />
         </div>
         <div className=''></div>
-        <div className='orders-sec'>
+        <div className='orders-sec' onClick={()=>history.push('/orders')}>
           <div>
             <div>Returns</div>
             <div>and Orders</div>
           </div>
         </div>
-        <div className='cart-sec'>
+        <div className='cart-sec' onClick={()=>history.push('/cart')}>
           <AiOutlineShoppingCart size="2rem" />
           <div>Cart</div>
         </div>
