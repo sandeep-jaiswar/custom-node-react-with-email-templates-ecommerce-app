@@ -21,7 +21,7 @@ const Header = forwardRef((props, ref) => {
   const menuClickHandler = () => {
     dispatch(showSlider("MenuSlider"));
   };
-  const isLocationCap = window.isLocationCap;
+  const pincode = window.pincode;
   const cartClickHandler = () => {
     dispatch(
       showPopover({
@@ -37,9 +37,9 @@ const Header = forwardRef((props, ref) => {
         <div className='logo' onClick={()=>history.push('')}>MART</div>
         <div className='deliver-location' onClick={()=>dispatch(showModal('ChooseLocationModal'))}>
           <HiOutlineLocationMarker />
-          {!!isLocationCap ? (<div className='loc-dtls'>
-            <div>Hello,</div>
-            <div>please select location</div>
+          {!!pincode ? (<div className='loc-dtls'>
+            <div>Deliever to</div>
+            <div>{window.pincode}</div>
           </div>) : (<div className='loc-dtls'>
             <div>Hello,</div>
             <div>please select location</div>

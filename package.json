@@ -18,6 +18,8 @@
   "dependencies": {
     "@loadable/component": "5.15.0",
     "@loadable/webpack-plugin": "5.15.0",
+    "autoprefixer": "^10.3.4",
+    "clean-webpack-plugin": "^4.0.0",
     "core-js": "3.17.3",
     "file-loader": "6.2.0",
     "mini-css-extract-plugin": "1.6.0",

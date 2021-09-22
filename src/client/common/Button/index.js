@@ -8,12 +8,14 @@ const Button = props =>{
 		className = '',
 		style = {},
 		onClick = () => {},
+    submit=''
   } = props;
   return(
     <button
     className={`${className} btn btn-${size} btn-${type}`}
     style={style}
     onClick={onClick}
+    type={submit}
     >
       {props.children}
     </button>

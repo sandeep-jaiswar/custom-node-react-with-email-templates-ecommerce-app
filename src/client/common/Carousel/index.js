@@ -19,7 +19,7 @@ const Carousel = forwardRef((props, ref) => {
       )
     }
     return (
-      <div className='svg-circle' style={{ left: `${left}%` }} onClick={() => addSliderEffect(key)}>
+      <div className='svg-circle' style={{ left: `${left}%` }} onClick={() => {}}>
         <div className="svg-wrapper">
           {getSvg(key)}
         </div>

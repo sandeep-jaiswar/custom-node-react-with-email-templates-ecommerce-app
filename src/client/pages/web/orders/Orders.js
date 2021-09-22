@@ -1,12 +1,12 @@
 import React from 'react'
 import HocPage from '../../Hoc-Page/HocPage'
 
-function Cart() {
+function Orders() {
     return (
         <HocPage>
-            cart
+            
         </HocPage>
     )
 }
 
-export default Cart
+export default Orders

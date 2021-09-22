@@ -13,6 +13,7 @@ export default class PendingNavDataLoader extends Component {
       showRoute,
       showLoader
     } = options;
+    console.log(options,'options');
     return (
       <>
         {showRoute && (

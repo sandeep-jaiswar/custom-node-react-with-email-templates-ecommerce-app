@@ -1,12 +1,3 @@
-import React from 'react'
-import HocPage from '../../Hoc-Page/HocPage'
+import Orders from './Orders';
 
-function Orders() {
-    return (
-        <HocPage>
-            
-        </HocPage>
-    )
-}
-
-export default Orders
+export default Orders;

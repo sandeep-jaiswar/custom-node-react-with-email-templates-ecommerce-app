@@ -14,12 +14,13 @@ import "regenerator-runtime/runtime";
 import "./client/common/Image/LazyLoadImage";
 
 var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-var element = document.getElementById('app');
 if (isMobile) {
   window.isMobile = true;
 } else {
   window.isMobile = false;
 }
+
+console.log('test');
 
 ReactDOM.hydrate(
   <Provider store={store()}>
